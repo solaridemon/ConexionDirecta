@@ -1,5 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+
+.busqueda {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+     border: 3px solid;
+    border-image: linear-gradient(45deg, #20DEFA, #2054FA) 1;
+    padding: 20px;
+}
+
+.busqueda h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.busqueda2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 20px;
+    align-items: end;
+    justify-items: center;
+}
+
+.busqueda2 > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+}
+
+.busqueda2 label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.busqueda2 select,
+.busqueda2 input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #fafbfc;
+    transition: all 0.3s ease;
+}
+
+.busqueda2 select:focus,
+.busqueda2 input[type="text"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.busqueda2 button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.busqueda2 button:hover {
+    background: #555;
+}
+
+@media (max-width: 1024px) {
+    .busqueda2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .busqueda2 button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .busqueda {
+        padding: 30px 20px;
+    }
+    
+    .busqueda2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .busqueda2 > div {
+        max-width: 100%;
+    }
+}
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #333;
