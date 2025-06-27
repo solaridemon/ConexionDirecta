@@ -141,6 +141,59 @@ footer hr {
     border-top: 1px solid #555;
 }
 
+.marcas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.marca-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marca-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.marca-card h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    color: #004c99;
+}
+
+.marca-card a {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.marca-card a:hover {
+    color: #003366;
+    border-color: #003366;
+}
+
+.marca-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
