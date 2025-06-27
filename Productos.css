@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+   
+}
+
 .busqueda {
+    
     background: white;
     padding: 40px;
     border-radius: 12px;
@@ -53,6 +63,7 @@
     font-size: 0.95rem;
     background: #fafbfc;
     transition: all 0.3s ease;
+    
 }
 
 .busqueda2 select:focus,
@@ -61,6 +72,7 @@
     border-color: #4a90e2;
     background: white;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    display: block;
 }
 
 .busqueda2 button {
@@ -105,13 +117,6 @@
     .busqueda2 > div {
         max-width: 100%;
     }
-}
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
