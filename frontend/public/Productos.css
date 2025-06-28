@@ -19,7 +19,7 @@ body {
     max-width: 1200px;
     width: 100%;
     text-align: center;
-     border: 3px solid;
+    border: 3px solid;
     border-image: linear-gradient(45deg, #20DEFA, #2054FA) 1;
     padding: 20px;
 }

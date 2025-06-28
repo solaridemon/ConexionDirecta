@@ -30,7 +30,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200pxx;
+    max-width:100%;
 }
 
 .logo {
@@ -123,13 +123,6 @@ button {
 
 button:hover {
     background-color: #003366;
-}
-
-.redes-sociales {
-    height: 10px;
-    width: auto;
-    object-fit: contain;
-    text-decoration: none;
 }
 
 footer {
