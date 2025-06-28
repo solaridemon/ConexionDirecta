@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="Productos.css">
+  <link href="/frontend/public/img/icon.jpg" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <div class="top-barra">
+      <a href="/frontend/public/index.html">
+        <img src="/frontend/public/img/icon.jpg" alt="Logotipo" class="logo">
+      </a>
+      <ul class="enlaces-navegacion">
+        <li><a href="/frontend/public/Productos.html">Ver Productos</a></li>
+        <li><a href="/frontend/public/Marcas.html">Nuestras Marcas</a></li>
+        <li><a href="/frontend/public/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1>Catálogo</h1>
+    <p class="subtitulo">Soluciones completas de Sensores y Actuadores industriales para automatización y control de
+      procesos</p>
+    <h2>Tu Plataforma para Productos de Alta Calidad</h2>
+    <p> Selecciona tu ciudad - Encuentra proveedores cerca de ti
+      ✓ Elige el tipo de sensor - Desde proximidad hasta temperatura, tenemos todo
+      ✓ Escoge tu marca favorita - Siemens, Bosch, Autonics o ABB</p>
+
+    <p>Encontaremos por ti el proveedor mas cercano a ti...</p>
+
+
+    <div class="busqueda">
+      <h3>Busca productos por:</h3>
+      <form>
+        <div class="busqueda2">
+
+          <label for="ciudad">Ciudad:</label>
+          <select id="ciudad" name="ciudad">
+            <option value="">Seleccionar ciudad</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+            <option value="barranquilla">Barranquilla</option>
+          </select>
+
+          <label for="tipo-sensor">Tipo de Sensor:</label>
+          <select id="tipo-sensor" name="tipo-sensor">
+            <option value="">Seleccionar tipo</option>
+            <option value="proximidad">Sensores de Proximidad</option>
+            <option value="temperatura">Sensores de Temperatura</option>
+            <option value="presion">Sensores de Presión</option>
+            <option value="movimiento">Sensores de Movimiento</option>
+            <option value="ultrasonico">Sensores Ultrasónicos</option>
+            <option value="optico">Sensores Ópticos</option>
+            <option value="magnetico">Sensores Magnéticos</option>
+            <option value="nivel">Sensores de Nivel</option>
+            <option value="fuerza">Sensores de Fuerza</option>
+            <option value="velocidad">Sensores de Velocidad</option>
+          </select>
+
+          <label for="marca">Marca:</label>
+          <select id="marca" name="marca">
+            <option value="">Seleccionar marca</option>
+            <option value="siemens">Siemens</option>
+            <option value="bosch">Bosch</option>
+            <option value="autonics">Autonics</option>
+            <option value="abb">ABB</option>
+          </select>
+          <input type="text" width="20px" height="10px">
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  </main>
+  <div class="seccion-categoria">
+    <h2 class="titulo-categoria">Sensores Fotoeléctricos</h2>
+    <div class="cuadricula-sensores">
+
+      <div class="tarjeta-sensor" data-ciudad="medellin" data-tipo="proximidad" data-marca="autonics">
+
+        <div class="encabezado-sensor">
+          <h3>Fotoeléctricos en Forma de U</h3>
+          <p class="modelo-sensor">Serie BUP</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <img src="/frontend/public/img/catalogo/BUP_main.png" alt="Sensor BUP" height="200px" width="200px">
+        </div>
+
+        <div class="caracteristicas">
+          <h4>Características Técnicas</h4>
+          <ul>
+            <li><strong>Tiempo de respuesta:</strong> 1ms</li>
+            <li><strong>Modos:</strong> Light ON/Dark ON</li>
+            <li><strong>Distancias:</strong> 30mm (BUP-30), 50mm (BUP-50)</li>
+            <li><strong>Principio:</strong> Transmisor y receptor integrados</li>
+            <li><strong>Marca:</strong> Autonics</li>
+          </ul>
+        </div>
+
+        <div class="seccion-ejemplo">
+          <h4>Ejemplo de Aplicación</h4>
+          <div class="imagen-ejemplo">
+            <img src="/frontend/public/img/catalogo/BUP_main_aplicacion.png" alt="Aplicación BUP" height="200px" width="200px">
+          </div>
+          <p class="texto-ejemplo">Ideal para detectar objetos pequeños y precisos en líneas de ensamblaje.</p>
+        </div>
+
+        <div class="insignia">Alta Precisión</div>
+      </div>
+
+      <div class="tarjeta-sensor" data-ciudad="bogota" data-tipo="proximidad" data-marca="autonics">
+
+        <div class="encabezado-sensor">
+          <h3>Fotoeléctricos Reflectivo Difuso</h3>
+          <p class="modelo-sensor">Serie BA</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <img src="/frontend/public/img/catalogo/BA_main.png" alt="Sensor BA" height="200px" width="200px">
+        </div>
+
+        <div class="caracteristicas">
+          <h4>Características Técnicas</h4>
+          <ul>
+            <li><strong>Distancia:</strong> Hasta 2m</li>
+            <li><strong>Ópticas:</strong> Especialmente diseñadas</li>
+            <li><strong>Indicadores:</strong> Operación/estabilidad</li>
+            <li><strong>Ajuste:</strong> Sensibilidad ajustable</li>
+            <li><strong>Marca:</strong> Autonics</li>
+          </ul>
+        </div>
+
+        <div class="seccion-ejemplo">
+          <h4>Ejemplo de Aplicación</h4>
+          <div class="imagen-ejemplo">
+            <img src="/frontend/img/catalogo/BA_main_aplicacion.png" alt="Aplicación BA" height="200px" width="200px">
+          </div>
+          <p class="texto-ejemplo">Detecta objetos en cintas transportadoras o almacenes grandes.</p>
+        </div>
+        <div class="insignia">Larga Distancia</div>
+      </div>
+      <div class="tarjeta-sensor" data-ciudad="cali" data-tipo="proximidad" data-marca="bosch">
+        <div class="encabezado-sensor">
+          <h3>Fotoeléctricos Compactos</h3>
+          <p class="modelo-sensor">Serie BJ</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <img src="/frontend/img/catalogo/BJ_cable_main.jpg" alt="Sensor BJ" height="200px" width="200px">
+        </div>
+
+        <div class="caracteristicas">
+          <h4>Características Técnicas</h4>
+          <ul>
+            <li><strong>Montaje:</strong> Lateral/frontal</li>
+            <li><strong>Protección:</strong> Contra sobrecorriente</li>
+            <li><strong>Interferencia:</strong> Prevención mutua</li>
+            <li><strong>Inmunidad:</strong> Excelente al ruido</li>
+            <li><strong>Marca:</strong> Bosch</li>
+          </ul>
+        </div>
+
+        <div class="seccion-ejemplo">
+          <h4>Ejemplo de Aplicación</h4>
+          <div class="imagen-ejemplo">
+            <img src="/frontend/public/img/catalogo/bj- ejemplo.jpg" alt="Aplicación BJ" height="200px" width="200px">
+          </div>
+          <p class="texto-ejemplo">Ideal para estanterías inteligentes o almacenes automáticos.</p>
+        </div>
+
+        <div class="insignia">Compacto</div>
+      </div>
+
+      <div class="tarjeta-sensor" data-ciudad="barranquilla" data-tipo="proximidad" data-marca="abb">
+
+        <div class="encabezado-sensor">
+          <h3>Fotoeléctricos Universales</h3>
+          <p class="modelo-sensor">Serie BX</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <img src="/frontend/public/img/catalogo/BX_main.jpg" alt="Sensor BX" height="200px" width="200px">
+        </div>
+
+        <div class="caracteristicas">
+          <h4>Características Técnicas</h4>
+          <ul>
+            <li><strong>Alimentación:</strong> 24-240 VCA/VCC</li>
+            <li><strong>Corriente:</strong> CA/CC universal</li>
+            <li><strong>Temporizador:</strong> ON/OFF/One-shot delay</li>
+            <li><strong>Aplicación:</strong> Industrial general</li>
+            <li><strong>Marca:</strong> ABB</li>
+          </ul>
+        </div>
+
+        <div class="seccion-ejemplo">
+          <h4>Ejemplo de Aplicación</h4>
+          <div class="imagen-ejemplo">
+            <img src="/frontend/public/img/catalogo/bx- ejemplo.jpg" alt="Aplicación BX" height="200px" width="200px">
+          </div>
+          <p class="texto-ejemplo">Versátil para procesos industriales y maquinaria.</p>
+        </div>
+
+        <div class="insignia">Universal</div>
+      </div>
+
+      <div class="tarjeta-sensor" data-ciudad="bogota" data-tipo="proximidad" data-marca="siemens">
+
+        <div class="encabezado-sensor">
+          <h3>Fotoeléctricos Cilíndricos</h3>
+          <p class="modelo-sensor">Serie BRQ</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <img src="/frontend/public/img/catalogo/BRQ_main.jpg" alt="Sensor BRQ" height="200px" width="200px">
+        </div>
+
+        <div class="caracteristicas">
+          <h4>Características Técnicas</h4>
+          <ul>
+            <li><strong>Diámetro:</strong> Ø18mm</li>
+            <li><strong>Distancia:</strong> Hasta 30m</li>
+            <li><strong>Materiales:</strong> SUS316L/latón/plástico</li>
+            <li><strong>Inmunidad:</strong> Excelente al ruido</li>
+            <li><strong>Marca:</strong> Siemens</li>
+          </ul>
+        </div>
+
+        <div class="seccion-ejemplo">
+          <h4>Ejemplo de Aplicación</h4>
+          <div class="imagen-ejemplo">
+            <img src="/frontend/public/img/catalogo/BRQ ejemplo.jpg" alt="Aplicación BRQ" height="200px" width="200px">
+          </div>
+          <p class="texto-ejemplo">Perfecto para ambientes industriales robustos.</p>
+        </div>
+
+        <div class="insignia">Robusto</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2025 Bootcamp Full Stack. Todos los derechos reservados. </p>
+    <p>Elaborado por: Kelly Giovanna Sanchez Marin, Gabriela Peralta De La Villa y Michael Andres Villamil Rodriguez.
+    </p>
+    <li><a href="#">&#x2191; Inicio</a></li>
+  </footer>
+  <script src="/frontend/public/sensor-search.js"></script>
+</body>
+
+</html>
