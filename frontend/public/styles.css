@@ -8,6 +8,9 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    background-image: url(img/fondoclaro.png);
+    background-size: cover;
+    background-position: bottom;
 }
 
 #principal-header {
@@ -65,7 +68,11 @@ nav {
 }
 
 .nav-links li a:hover {
-    font-weight: bold;
+    border: white 1px solid;
+    border-radius: 50px;
+}
+
+.nav-links li a:active {
     border: white 1px solid;
     border-radius: 50px;
 }
@@ -123,18 +130,62 @@ input, textarea {
 }
 
 button {
-    padding: 0.8em 1.5em;
-    background-color: #004c99;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 1em 1.5em;
+    background-color: #ffffff;
+    color: black;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.btn-secundario {
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    margin-left: 50px   ;
 }
 
 button:hover {
-    background-color: #003366;
+    background-color: #a2a2a2;
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#productos .producto {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -147,6 +198,14 @@ footer {
     width: 100%;
     font-size: smaller;
     list-style-type: none;
+}
+
+footer a {
+    border-radius: 50px;
+    background-color: #ffffff;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .marcas-container {
@@ -201,7 +260,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 #redes-sociales ul {
     display: flex;

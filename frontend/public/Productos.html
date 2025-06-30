@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalogo</title>
   <link rel="stylesheet" href="Productos.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="/frontend/public/img/icon.jpg" rel="icon" type="image/x-icon">
 </head>
 
@@ -15,8 +16,8 @@
       <a href="/frontend/public/index.html">
         <img src="/frontend/public/img/icon.jpg" alt="Logotipo" class="logo">
       </a>
-      <ul class="enlaces-navegacion">
-        <li><a href="/frontend/public/Productos.html">Ver Productos</a></li>
+      <ul class="nav-links">
+        <li><a href="/frontend/public/Productos.html" class="active">Ver Productos</a></li>
         <li><a href="/frontend/public/Marcas.html">Nuestras Marcas</a></li>
         <li><a href="/frontend/public/contacto.html">Contacto</a></li>
       </ul>
@@ -24,21 +25,10 @@
   </nav>
   <header>
     <h1>Catálogo</h1>
-    <p class="subtitulo">Soluciones completas de Sensores y Actuadores industriales para automatización y control de
-      procesos</p>
-    <h2>Tu Plataforma para Productos de Alta Calidad</h2>
-    <p> Selecciona tu ciudad - Encuentra proveedores cerca de ti
-      ✓ Elige el tipo de sensor - Desde proximidad hasta temperatura, tenemos todo
-      ✓ Escoge tu marca favorita - Siemens, Bosch, Autonics o ABB</p>
-
-    <p>Encontaremos por ti el proveedor mas cercano a ti...</p>
-
-
     <div class="busqueda">
       <h3>Busca productos por:</h3>
       <form>
         <div class="busqueda2">
-
           <label for="ciudad">Ciudad:</label>
           <select id="ciudad" name="ciudad">
             <option value="">Seleccionar ciudad</option>
@@ -71,8 +61,7 @@
             <option value="autonics">Autonics</option>
             <option value="abb">ABB</option>
           </select>
-          <input type="text" width="20px" height="10px">
-          <button type="submit">Buscar</button>
+          <button class="btn-secundario" type="submit">Buscar</button>
         </div>
       </form>
     </div>
@@ -108,7 +97,8 @@
         <div class="seccion-ejemplo">
           <h4>Ejemplo de Aplicación</h4>
           <div class="imagen-ejemplo">
-            <img src="/frontend/public/img/catalogo/BUP_main_aplicacion.png" alt="Aplicación BUP" height="200px" width="200px">
+            <img src="/frontend/public/img/catalogo/BUP_main_aplicacion.png" alt="Aplicación BUP" height="200px"
+              width="200px">
           </div>
           <p class="texto-ejemplo">Ideal para detectar objetos pequeños y precisos en líneas de ensamblaje.</p>
         </div>
