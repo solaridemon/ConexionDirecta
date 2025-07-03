@@ -21,21 +21,21 @@
                 <img src="/frontend/public/img/icon.jpg" alt="Logotipo" class="logo">
             </a>
             <ul class="nav-links">
+                <li><a href="../public/index.html">Inicio</a></li>
                 <li><a href="/frontend/public/Productos.html">Ver Productos</a></li>
                 <li><a href="/frontend/public/Marcas.html">Nuestras Marcas</a></li>
-                <li><a href="/frontend/public/contacto.html">Contacto</a></li>
+                <li><a href="/frontend/public/contacto.html" class="active">Contacto</a></li>
             </ul>
         </div>
     </nav>
     <div>
         <header>
             <h1 class="titulo">Contacto</h1>
-            <p>Estamos aquí para ayudarte. Completa el formulario y un asesor especializado se pondrá en contacto
-                contigo.</p>
         </header>
     </div>
 
     <main>
+        <div class="contacto-container">
         <section id="formulario-contacto">
             <h2>Formulario de Contacto</h2>
             <form action="enviar_contacto.php" method="POST">
@@ -70,12 +70,12 @@
                     <option value="venta">Venta de Productos</option>
                     <option value="otro">Otro</option>
                 </select>
-                <button type="submit">Enviar</button>
-
+                <button class="btn-secundario" type="submit">Enviar</button>
             </form>
         </section>
 
-        <section id="informacion-contacto">
+        <div class="info-contacto">
+            <section id="informacion-contacto">
             <h2>Información de Contacto</h2>
             <p>Teléfono: +34 123 456 789</p>
             <p>Email: <a href="mailto:info@empresa.com">info@empresa.com</a></p>
@@ -92,13 +92,14 @@
                             src="/frontend/public/img/whatsapp.png" alt="WhatsApp"></a></li>
             </ul>
         </section>
+    </div>
+    </div>
     </main>
     <footer>
+        <li><a href="#">&#x2191; Inicio</a></li>
         <p>&copy; 2025 Bootcamp Full Stack. Todos los derechos reservados.</p>
         <p>Elaborado por: Kelly Giovanna Sanchez Marin, Gabriela Peralta De La Villa y Michael Andres Villamil Rodriguez
         </p>
-        <li><a href="#">&#x2191; Inicio</a></li>
-
     </footer>
 
 </html>
