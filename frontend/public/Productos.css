@@ -66,6 +66,7 @@ body {
     background: white;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
     display: block;
+    border-radius: 8px;
 }
 
 .busqueda2 button {
@@ -83,6 +84,7 @@ body {
 
 .busqueda2 button:hover {
     background: #555;
+    border-radius: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -350,4 +352,14 @@ footer hr {
     margin-bottom: 1em;
     border: none;
     border-top: 1px solid #555;
+}
+
+.btn-secundario {
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    margin-left: 50px;
 }

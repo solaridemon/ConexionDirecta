@@ -1,6 +1,7 @@
 
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault(); 
+    document.querySelector('.seccion-categoria').scrollIntoView({ behavior: 'smooth' });
 
     const ciudad = document.getElementById('ciudad').value.toLowerCase();
     const tipo = document.getElementById('tipo-sensor').value.toLowerCase();
